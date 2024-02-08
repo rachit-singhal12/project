@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family : Arial;
+            margin  :0;
+        }
+        .header{
+            padding: 60px;
+            text-align: center;
+            background-color: seagreen;
+            color : white;
+        }
+        .navbar{
+            display: flex;
+            background-color: lightgreen;
+            position: sticky;
+            top : 0;
+        }
+        .navbar a{
+            color : black;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: #3333;
+            color : white;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar{
+            flex: 30%;
+            background-color: azure;
+            padding : 20px;
+        }
+
+        .main-content{
+            flex: 70%;
+            background-color : antiquewhite;
+            padding  : 20px;
+        }
+        .title-image{
+            background-color: tan;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding : 20px;
+        }
+        .img{
+            background-color: #ffcc5c;
+            width : 50%;
+            max-width: 50%;
+            height: auto;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+            animation-name: image;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes image {
+            0%{background-color: #FFFF33; left:0px;top:0px;}
+            25%{background-color: #FFCC33; left:0px;top:0px;}
+            50%{background-color: #FF9933; left:50px;top:0px;}
+            75%{background-color: #FF6633; left:50px;top:0px;}
+            100%{background-color: #FF3333; left:100px;top:0px;}
+        }
+
+        .footer{
+            padding: 5px;
+            text-align: center;
+            background: cadetblue;
+        }
+
+        @media (max-width : 700px){
+            .row,.navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: pink;padding : 2px">
+        <h4 style="text-align: center;">This is the CSS assignment using the various css properties along with responsive web design.</h4>
+    </div>
+    <div class="header">
+        <h1>Welcome to Responsive Webpage!</h1>
+        <p>With a <strong>Adjustable and Reactive </strong>layout.</p>
+    </div>
+
+    <div class="navbar ">
+        <a href="index.html">Home</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+
+    <div class="row">
+        <div class="sidebar">
+            <h2>
+                About Internship Studio
+            </h2>
+            <h5>Photo of Internship:</h5>
+            <img src="https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image not loaded yet" class="title-image" style="height:200px"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error iure delectus fuga aut mollitia. Corporis repudiandae, adipisci debitis, nobis ad accusantium cumque amet eius, numquam nam itaque nisi ducimus.</p>
+            <h3>Webdesign course</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, cumque inventore. Maiores praesentium atque dolorum voluptatibus, illum nam earum eligendi quis, mollitia quisquam nesciunt magnam hic soluta esse? Unde, labore.
+            Aliquid, earum odio quod nemo veritatis voluptatem tempore facilis deleniti eos hic impedit necessitatibus placeat, magni ratione quia excepturi voluptate nostrum consequatur nihil incidunt vel! Eum ipsam amet esse ullam?</p>
+            <img src="https://images.pexels.com/photos/1646981/pexels-photo-1646981.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image not loaded yet" class="img" style="height:100px"/><br><br>
+        </div>
+        <div class="main-content">
+            <h2>WEBSITE DESIGN</h2>
+            <h5>Straing from, jan 17, 2024</h5>
+            <img src="https://images.pexels.com/photos/1058367/pexels-photo-1058367.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image not loaded yet" class="title-image" style="height:300px"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est enim sed dolores porro, veritatis ab tenetur, pariatur animi autem natus facere in non id sapiente magni tempora doloribus doloremque?<br>
+            Nesciunt rerum mollitia quasi suscipit nulla, consequatur voluptas! Veniam doloremque sunt magni corrupti qui quis necessitatibus facere reprehenderit odio. Perspiciatis facilis cum sint provident obcaecati dolorum quibusdam illo natus iste.<br>
+            Dicta repellat voluptate aspernatur omnis harum maxime qui incidunt fugit aliquam recusandae! Numquam, rem iste! Nostrum odit odio quis sunt, molestiae possimus consequatur alias molestias dicta debitis recusandae aliquid beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam officia pariatur assumenda impedit nemo reiciendis aut quia expedita, quisquam rem voluptas enim itaque reprehenderit maiores, ipsum atque! Sit, earum?<br>
+            Repellat minima eum libero necessitatibus animi cupiditate saepe in similique ducimus quasi illo doloribus voluptatibus, exercitationem iste suscipit nobis sunt pariatur id voluptates quo. Soluta omnis optio quia? Saepe, magnam.<br>
+            Provident repellat ipsa expedita neque libero. Modi veniam labore magnam provident, laborum illo! Recusandae aliquam explicabo mollitia placeat consectetur enim esse deleniti reiciendis modi, at illum distinctio voluptatibus ullam fugit.</p><br>
+            <h2>Who this intership is for?</h2>
+            <h5>Straing from, jan 17, 2024</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                <li>Beatae quae consequuntur tempora quam repudiandae voluptates eligendi id possimus sint quo optio quas perspiciatis laudantium facere autem, </li>
+                <li>ullam debitis dolorem voluptatem!
+                Quos iste veniam deleniti minus inventore, doloremque</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>@Intensive Learning</h2>
+    </div>
+</body>
+</html>
